@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.app.example.example"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/nakazatosho/workspace/flutter/example/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/nakazatosho/workspace/flutter/example/android/app/src/debug/AndroidManifest.xml:6:22-64
+15
+16    <queries>
+16-->/Users/nakazatosho/workspace/flutter/example/android/app/src/main/AndroidManifest.xml:34:5-39:15
+17        <intent>
+17-->/Users/nakazatosho/workspace/flutter/example/android/app/src/main/AndroidManifest.xml:35:9-38:18
+18            <action android:name="android.intent.action.VIEW" />
+18-->/Users/nakazatosho/workspace/flutter/example/android/app/src/main/AndroidManifest.xml:36:13-65
+18-->/Users/nakazatosho/workspace/flutter/example/android/app/src/main/AndroidManifest.xml:36:21-62
+19
+20            <data android:scheme="https" />
+20-->/Users/nakazatosho/workspace/flutter/example/android/app/src/main/AndroidManifest.xml:37:13-44
+20-->/Users/nakazatosho/workspace/flutter/example/android/app/src/main/AndroidManifest.xml:37:19-41
+21        </intent>
+22    </queries>
+23
+24    <application
+25        android:name="android.app.Application"
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.6.0] /Users/nakazatosho/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+29        android:label="example" >
+30        <activity
+31            android:name="com.app.example.example.MainActivity"
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33            android:exported="true"
+34            android:hardwareAccelerated="true"
+35            android:launchMode="singleTop"
+36            android:theme="@style/LaunchTheme"
+37            android:windowSoftInputMode="adjustResize" >
+38
+39            <!--
+40                 Specifies an Android theme to apply to this Activity as soon as
+41                the Android process has started. This theme is visible to the user
+42                while the Flutter UI initializes. After that, this theme continues
+43                to determine the Window background behind the Flutter UI.
+44            -->
+45            <meta-data
+46                android:name="io.flutter.embedding.android.NormalTheme"
+47                android:resource="@style/NormalTheme" />
+48
+49            <intent-filter>
+50                <action android:name="android.intent.action.MAIN" />
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+53            </intent-filter>
+54        </activity>
+55        <!--
+56             Don't delete the meta-data below.
+57            This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+58        -->
+59        <meta-data
+60            android:name="flutterEmbedding"
+61            android:value="2" />
+62
+63        <activity
+63-->[:url_launcher_android] /Users/nakazatosho/workspace/flutter/example/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+64            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+64-->[:url_launcher_android] /Users/nakazatosho/workspace/flutter/example/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+65            android:exported="false"
+65-->[:url_launcher_android] /Users/nakazatosho/workspace/flutter/example/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+66            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+66-->[:url_launcher_android] /Users/nakazatosho/workspace/flutter/example/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+67
+68        <uses-library
+68-->[androidx.window:window:1.0.0-beta04] /Users/nakazatosho/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+69            android:name="androidx.window.extensions"
+69-->[androidx.window:window:1.0.0-beta04] /Users/nakazatosho/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+70            android:required="false" />
+70-->[androidx.window:window:1.0.0-beta04] /Users/nakazatosho/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+71        <uses-library
+71-->[androidx.window:window:1.0.0-beta04] /Users/nakazatosho/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+72            android:name="androidx.window.sidecar"
+72-->[androidx.window:window:1.0.0-beta04] /Users/nakazatosho/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+73            android:required="false" />
+73-->[androidx.window:window:1.0.0-beta04] /Users/nakazatosho/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+74    </application>
+75
+76</manifest>
